@@ -19,6 +19,13 @@ img {
 
 .site-header {
   padding: 20px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .site-header {
+  text-align: left;
+}
 }
 
 .contenedor {
@@ -48,12 +55,30 @@ img {
 .close-menu{
   padding: 2rem 0;
 }
+@media (min-width: 768px){
+  .mobile-menu{
+    display: none;
+  }
+  .barra nav{
+    display: block;
+  }
+  .barra .close-menu{
+    display: none;
+  }
+}
+
 /*navegacion*/
 .barra {
   background-color: #DB008D;
-  margin-bottom: 2rem;
 }
-
+@media (min-width: 768px){
+  .barra{
+    padding-left: 2rem;
+  }
+  .barra a:first-of-type{
+    padding-left: 0;
+  }
+}
 .navegacion-principal a {
   color: white;
   text-decoration: none;
@@ -183,17 +208,26 @@ h2 {
 .footer-sitio a:last-of-type {
   margin-right: 0;
 }
+@media (max-width:768px){
+  .menu-footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  }
+}
 @media (min-width: 768px) {
   .footer-sitio .nosotros {
     float: left;
     width: 40%;
     text-align: left;
+    margin-left: 2rem;
   }
 
   .footer-sitio .menu {
     float: right;
     width: 40%;
     text-align: right;
+    margin-right: 2rem;
   }
 }
 .copyright{
