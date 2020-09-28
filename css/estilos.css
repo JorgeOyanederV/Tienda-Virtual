@@ -35,7 +35,18 @@ img {
 .mobile-menu{
   color: white;
   font-size: 4rem;
-  
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+}
+.barra nav{
+  display: none;
+}
+#nave:target {
+  display: block;
+}
+.close-menu{
+  padding: 2rem 0;
 }
 /*navegacion*/
 .barra {
