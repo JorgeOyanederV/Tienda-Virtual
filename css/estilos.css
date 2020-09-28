@@ -31,7 +31,12 @@ img {
   clear: both;
   display: block;
 }
-
+/*Navegacion Responsive*/
+.mobile-menu{
+  color: white;
+  font-size: 4rem;
+  
+}
 /*navegacion*/
 .barra {
   background-color: #DB008D;
